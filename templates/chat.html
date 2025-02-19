@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Chat Interface</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <h1>Voice<span>Chat</span></h1>
+            </div>
+            <nav class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Chat</a>
+                <a href="#">Profile</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container main-content">
+        <section class="chat-section">
+            <div class="section-header">
+                <h2>Voice Chat</h2>
+            </div>
+            <div class="chat-box">
+                <div class="chat-messages">
+                    <!-- Messages will be populated here -->
+                    <div class="message received">
+                        <p>Hello! How can I help you today?</p>
+                    </div>
+                    <div class="message sent">
+                        <p>I'd like to know more about your services.</p>
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <input type="text" placeholder="Type your message..." />
+                    <button class="button voice-button">
+                        <i class="fas fa-microphone"></i>
+                    </button>
+                    <button class="button send-button">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="voice-controls">
+                <div class="voice-status">
+                    <span class="status-text">Click microphone to start</span>
+                    <div class="voice-waves">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
